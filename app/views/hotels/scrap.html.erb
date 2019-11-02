@@ -1,0 +1,14 @@
+<h1>Data Scraping</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+  </tr>
+  <% @hotels.each do |hotel| %>
+    <tr>
+      <td><%= hotel[:name] %></td>
+      <td><%= hotel[:starting_price].to_s + " Euros" %></td>
+    </tr>
+  <% end %>
+</table>
